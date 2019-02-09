@@ -103,7 +103,8 @@ strong {
 
 @media only screen and (max-width: 800px) {
   .website {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 2em; }
   .wrapper--website {
     flex-direction: column; }
