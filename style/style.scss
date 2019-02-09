@@ -21,12 +21,12 @@ body {
 }
 
 .header {
-  font-size: 1.5em;
+  font-size: calc(0.6vw + 1.25em);
   font-weight: 400;
-  max-width: $max-width;
+  max-width: $max-width + 200px;
   margin: 0 auto;
   line-height: 1.6em;
-  padding-top: 4em;
+  padding: 4em 1em 0 1em;
   font-family: $font-stack;
   color: $medium-grey;
 
@@ -48,6 +48,7 @@ strong {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  padding: 0 2em;
   max-width: 400px;
   margin: 0 auto;
   height: 50px;
@@ -67,12 +68,13 @@ strong {
   font-weight: 600;
   font-size: 2.5em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .website-description {
   font-size: 1.25em;
   color: $medium-grey;
+  padding: 0 1em;
   line-height: 1.4em;
   font-family: $font-stack;
   margin-bottom: 2em;
@@ -104,7 +106,7 @@ strong {
   }
 
   &--work {
-    width: $max-width + 400px;
+    max-width: $max-width + 400px;
     margin: 0 auto;
   }
 
@@ -129,12 +131,18 @@ strong {
 }
 
 @media only screen and (max-width: 800px) {
+  .website {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
   .wrapper {
     &--website {
       flex-direction: column;
     }
 
     &--description {
+      width: 100%;
       margin: 0 auto;
     }
   }

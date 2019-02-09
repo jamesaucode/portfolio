@@ -12,12 +12,12 @@ body {
   height: 2000px; }
 
 .header {
-  font-size: 1.5em;
+  font-size: calc(0.6vw + 1.25em);
   font-weight: 400;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6em;
-  padding-top: 4em;
+  padding: 4em 1em 0 1em;
   font-family: "Open Sans", sans-serif;
   color: rgba(0, 0, 0, 0.65); }
   .header--secondary {
@@ -35,6 +35,7 @@ strong {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  padding: 0 2em;
   max-width: 400px;
   margin: 0 auto;
   height: 50px; }
@@ -50,11 +51,12 @@ strong {
   font-weight: 600;
   font-size: 2.5em;
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 .website-description {
   font-size: 1.25em;
   color: rgba(0, 0, 0, 0.65);
+  padding: 0 1em;
   line-height: 1.4em;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 2em; }
@@ -80,7 +82,7 @@ strong {
   margin-bottom: 6em; }
 
 .wrapper--work {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .wrapper--links {
@@ -100,7 +102,11 @@ strong {
   margin-left: auto; }
 
 @media only screen and (max-width: 800px) {
+  .website {
+    width: 100%;
+    margin-bottom: 2em; }
   .wrapper--website {
     flex-direction: column; }
   .wrapper--description {
+    width: 100%;
     margin: 0 auto; } }
