@@ -1,0 +1,141 @@
+$font-stack: "Open Sans", sans-serif;
+$medium-grey: rgba(0,0,0,0.65);
+$dark-grey: rgba(0,0,0,0.9);
+$background-color: #f8f8f8;
+$max-width: 600px;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.fab {
+  font-size: 2em;
+  color: black;
+}
+
+body {
+  background: $background-color;
+  height: 2000px;
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: 400;
+  max-width: $max-width;
+  margin: 0 auto;
+  line-height: 1.6em;
+  padding-top: 4em;
+  font-family: $font-stack;
+  color: $medium-grey;
+
+  &--secondary {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: "Roboto";
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 50px;
+
+  &-items {
+    font-family: $font-stack;
+  }
+}
+
+.website {
+  width: 50%;
+}
+
+.website-name {
+  font-family: $font-stack;
+  color: $dark-grey;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.website-description {
+  font-size: 1.25em;
+  color: $medium-grey;
+  line-height: 1.4em;
+  font-family: $font-stack;
+  margin-bottom: 2em;
+}
+
+.website-link {
+  display: block;
+  padding: 1em 2em;
+  background: rgb(0, 122, 0);
+  color: white;
+  margin: 5px 0;
+  // width: 120px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: $font-stack;
+}
+
+.wrapper {
+  &--navbar {
+    position: fixed;
+    width: 100vw;
+    background: $background-color;
+  }
+
+  &--header {
+    text-align: center;
+    margin-bottom: 6em;
+  }
+
+  &--work {
+    width: $max-width + 400px;
+    margin: 0 auto;
+  }
+
+  &--links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &--website {
+    display: flex;
+    height: 100%;
+    padding: 4em 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  &--description {
+    width: 45%;
+    height: 100%;
+    padding: 0 1em;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    &--website {
+      flex-direction: column;
+    }
+
+    &--description {
+      margin: 0 auto;
+    }
+  }
+}

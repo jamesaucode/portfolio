@@ -1,0 +1,106 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+.fab {
+  font-size: 2em;
+  color: black; }
+
+body {
+  background: #f8f8f8;
+  height: 2000px; }
+
+.header {
+  font-size: 1.5em;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6em;
+  padding-top: 4em;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.65); }
+  .header--secondary {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: "Roboto"; }
+
+strong {
+  font-weight: 700; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 50px; }
+  .navbar-items {
+    font-family: "Open Sans", sans-serif; }
+
+.website {
+  width: 50%; }
+
+.website-name {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2em; }
+
+.website-description {
+  font-size: 1.25em;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.4em;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2em; }
+
+.website-link {
+  display: block;
+  padding: 1em 2em;
+  background: #007a00;
+  color: white;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif; }
+
+.wrapper--navbar {
+  position: fixed;
+  width: 100vw;
+  background: #f8f8f8; }
+
+.wrapper--header {
+  text-align: center;
+  margin-bottom: 6em; }
+
+.wrapper--work {
+  width: 1000px;
+  margin: 0 auto; }
+
+.wrapper--links {
+  display: flex;
+  justify-content: space-around; }
+
+.wrapper--website {
+  display: flex;
+  height: 100%;
+  padding: 4em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+.wrapper--description {
+  width: 45%;
+  height: 100%;
+  padding: 0 1em;
+  margin-left: auto; }
+
+@media only screen and (max-width: 800px) {
+  .wrapper--website {
+    flex-direction: column; }
+  .wrapper--description {
+    margin: 0 auto; } }
